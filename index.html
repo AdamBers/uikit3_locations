@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-flex uk-padding">
+      <div
+        class="uk-width-1-3 uk-padding-large uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex uk-flex-column uk-flex-between"
+      >
+        <div>
+          <p class="uk-text-large">Выбери участок в лучшей локации</p>
+          <ul
+            class="uk-subnav uk-subnav-pill uk-margin-remove-left"
+            uk-switcher="connect: .switcher-container"
+          >
+            <li class="uk-padding-remove-left"><a href="#">На Волге</a></li>
+            <li class="uk-padding-remove-left"><a href="#">На Валдае</a></li>
+            <li class="uk-padding-remove-left"><a href="#">На Вазузе</a></li>
+            <li class="uk-padding-remove-left"><a href="#">На Селигере</a></li>
+            <li class="uk-padding-remove-left"><a href="#">В Завидово</a></li>
+          </ul>
+
+          <ul class="uk-switcher switcher-container">
+            <li>
+              Волга — одна из самых величественных и красивых рек в России, а
+              также самая многоводная в Европе. Ее путь простирается через
+              обширные леса, горы и холмы.Растительный и животный мир реки
+              впечатляет своим многообразием.Это место силы с богатой историей и
+              уникальной природой, идеальное для жизни, отдыха и ведения
+              бизнеса.
+            </li>
+            <li>
+              Валдай по праву называется озерным краем, здесь расположено
+              несколько десятков озер. Самые крупные из них — Велье, Селигер,
+              Ужин, Ильмень, Боровно.Район отличается кристально чистым
+              воздухом,а незабываемые виды на чистые и глубокие лесные озера
+              Валдая делают это место особенным.
+            </li>
+            <li>
+              Территория подойдет тем, кто высоко ценит индивидуальность,
+              высококлассную инфраструктуру. Здесь есть все, что необходимо для
+              жизни и отдыха в гармонии: прекрасная экология, ощущение свободы и
+              городской уровень комфорта. Открывается много возможностей для
+              отдыха: прогулки на лодках и яхтах, дайвинг, катание на
+              гидроциклах, пейнтбол, купание, рыбалка, охота, зимние виды
+              спорта, зимняя рыбалка
+            </li>
+            <li>
+              Селигер — одно из красивейших озер европейской части России. Это
+              не просто озеро, а система озер, соединенных между собой короткими
+              проливами, образуя настоящий водный лабиринт. Здесь можно
+              насладиться отличной рыбалкой, собирать грибы и ягоды, а также
+              отправиться в увлекательное путешествие по озеру на лодке, чтобы
+              посетить Нилову пустынь — овеянный легендами действующий монастырь
+            </li>
+            <li>
+              Завидово — это локация с богатой историей и уникальной природой,
+              идеальная для жизни и отдыха, находящаяся между Москвой и Тверью.
+              Сейчас Завидово — модный, деловой, благоустроенный и
+              комфортабельный курорт, сочетающий в себе динамичный темп жизни и
+              возможность для релакса в экологически чистой зоне на свежем
+              воздухе. Это место с историческим наследием. На территории
+              Завидово находится заповедник, который признан ЮНЕСКО одним из
+              самых экологически чистых мест на планете.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="uk-width-1-1">
+            <a
+              class="uk-button uk-button-default uk-width-1-1"
+              href="#modal-center"
+              uk-toggle
+              >СМОТРЕТЬ УЧАСТКИ</a
+            >
+          </button>
+
+          <div id="modal-center" class="uk-flex-top" uk-modal>
+            <div
+              class="uk-modal-dialog uk-modal-body uk-width-1-1 uk-height-1-1 uk-margin-remove"
+            >
+              <button
+                class="uk-modal-close-default"
+                type="button"
+                uk-close
+              ></button>
+
+              <iframe
+                src="https://vt.bigland.ru/vt/eac40732-a3bc-4b16-b4a5-64381e88f54a/index.html"
+                frameborder="0"
+                width="100%"
+                height="100%"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-width-2-3">
+        <ul class="uk-switcher switcher-container uk-height-1-1">
+          <div class="uk-position-relative uk-light uk-height-1-1" uk-slideshow>
+            <ul class="uk-slideshow-items uk-height-1-1">
+              <img src="./assets/img/slider/1_1.png" alt="" uk-cover />
+              <img src="./assets/img/slider/1_2.png" alt="" uk-cover />
+              <img src="./assets/img/slider/1_3.png" alt="" uk-cover />
+              <img src="./assets/img/slider/1_4.png" alt="" uk-cover />
+            </ul>
+
+            <div class="uk-position-bottom-center uk-position-small">
+              <ul class="uk-dotnav uk-padding">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="uk-position-relative uk-light uk-height-1-1" uk-slideshow>
+            <ul class="uk-slideshow-items uk-height-1-1">
+              <img src="./assets/img/slider/2_1.png" alt="" uk-cover />
+              <img src="./assets/img/slider/2_2.png" alt="" uk-cover />
+              <img src="./assets/img/slider/2_3.png" alt="" uk-cover />
+              <img src="./assets/img/slider/2_4.png" alt="" uk-cover />
+            </ul>
+
+            <div class="uk-position-bottom-center uk-position-small">
+              <ul class="uk-dotnav uk-padding">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-position-relative uk-light uk-height-1-1" uk-slideshow>
+            <ul class="uk-slideshow-items uk-height-1-1">
+              <img src="./assets/img/slider/3_1.png" alt="" uk-cover />
+              <img src="./assets/img/slider/3_2.png" alt="" uk-cover />
+              <img src="./assets/img/slider/3_3.png" alt="" uk-cover />
+              <img src="./assets/img/slider/3_4.png" alt="" uk-cover />
+            </ul>
+
+            <div class="uk-position-bottom-center uk-position-small">
+              <ul class="uk-dotnav uk-padding">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-position-relative uk-light uk-height-1-1" uk-slideshow>
+            <ul class="uk-slideshow-items uk-height-1-1">
+              <img src="./assets/img/slider/4_1.png" alt="" uk-cover />
+              <img src="./assets/img/slider/4_2.png" alt="" uk-cover />
+              <img src="./assets/img/slider/4_3.png" alt="" uk-cover />
+              <img src="./assets/img/slider/4_4.png" alt="" uk-cover />
+            </ul>
+
+            <div class="uk-position-bottom-center uk-position-small">
+              <ul class="uk-dotnav uk-padding">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-position-relative uk-light uk-height-1-1" uk-slideshow>
+            <ul class="uk-slideshow-items uk-height-1-1">
+              <img src="./assets/img/slider/5_1.png" alt="" uk-cover />
+              <img src="./assets/img/slider/5_2.png" alt="" uk-cover />
+              <img src="./assets/img/slider/5_3.png" alt="" uk-cover />
+              <img src="./assets/img/slider/5_4.png" alt="" uk-cover />
+            </ul>
+
+            <div class="uk-position-bottom-center uk-position-small">
+              <ul class="uk-dotnav uk-padding">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
